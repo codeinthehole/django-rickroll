@@ -1,0 +1,2 @@
+class HackingAttempt(Exception):
+    pass
