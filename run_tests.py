@@ -6,7 +6,7 @@ from django.conf import settings, global_settings
 
 if not settings.configured:
     settings.configure(
-            DATABASES = {
+            DATABASES={
                 'default': {
                     'ENGINE': 'django.db.backends.sqlite3',
                     }
@@ -20,7 +20,7 @@ if not settings.configured:
                 'rickroll',
                 'tests',
                 ],
-            MIDDLEWARE_CLASSES = global_settings.MIDDLEWARE_CLASSES + (
+            MIDDLEWARE_CLASSES=global_settings.MIDDLEWARE_CLASSES + (
                 'rickroll.middleware.HackingAttemptMiddleware',
                 ),
             ROOT_URLCONF='tests.urls',
@@ -29,6 +29,7 @@ if not settings.configured:
         )
 
 from django.test.simple import DjangoTestSuiteRunner
+
 
 def run_tests():
     # Modify path

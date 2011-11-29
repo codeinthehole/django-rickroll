@@ -8,9 +8,7 @@ setup(
     long_description=open('README.rst').read(),
     author='David Winterbottom',
     author_email='david.winterbottom@gmail.com',
+    url='https://github.com/codeinthehole/django-rickroll',
     license='BSD',
     packages=find_packages(exclude=('tests',)),
-    tests_require=[
-        'django>=1.3'
-    ],
-)
+    tests_require=['django>=1.3'])

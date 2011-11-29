@@ -1,6 +1,10 @@
+from django.http import HttpResponse
 from rickroll.exceptions import HackingAttempt
 
 
-def index(request):
-    raise HackingAttempt("Naughty!")
+def normal_view(request):
+    return HttpResponse()
 
+
+def hacking_attempt(request):
+    raise HackingAttempt("Naughty!")
