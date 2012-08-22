@@ -9,7 +9,7 @@ class HackingAttemptMiddleware(object):
         try:
             url = settings.RICKROLL_URL
         except AttributeError:
-            url = 'http://www.youtube.com/watch?v=oHg5SJYRHA0'
+            url = 'http://www.youtube.com/watch?v=dQw4w9WgXcQ'
         return url
 
     def process_exception(self, request, exception):

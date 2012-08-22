@@ -23,7 +23,7 @@ class MiddlewareTests(TestCase):
     def test_raising_exception_redirects_to_youtube_by_default(self):
         "Raising the HackingAttempt exception should rickroll"
         response = self.client.get('/hacking/')
-        self.assertEquals('http://www.youtube.com/watch?v=oHg5SJYRHA0',
+        self.assertEquals('http://www.youtube.com/watch?v=dQw4w9WgXcQ',
                           response['Location'])
 
     def test_redirect_url_can_be_manually_set(self):
