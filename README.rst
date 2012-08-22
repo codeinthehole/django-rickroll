@@ -32,7 +32,7 @@ For example, in your ``views.py``::
         if hacking_detected:
             raise HackingAttempt()
 
-then the user in question will get redirected to http://www.youtube.com/watch?v=oHg5SJYRHA0.
+then the user in question will get redirected to http://www.youtube.com/watch?v=dQw4w9WgXcQ.
 The destination can be overridden using the setting ``RICKROLL_URL``.
 
 Discussion
